@@ -23,3 +23,25 @@ const questions = [
         name: 'shapecolor'
     }
 ];
+
+async function writeToFile(fileName, data) {
+    try {
+        const writeFileAsync = util.promisify(fs.writeFile);
+        await writeFileAsync(fileName, data);
+        console.log("Please enjoy your dope new logo.");
+    } catch (err) {
+        console.log(err);
+    }
+}
+
+async function init() {
+    try {
+        const data = await inquirer.prompt(questions);
+        const userLogo = new Shape(data.text, data.textcolor, data.shape, data.shapecolor);
+        await writeToFile('./examples/logo.svg', userLogo.render());
+    } catch (err) {
+        console.log(err);
+    }
+}
+
+init();
