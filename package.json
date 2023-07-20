@@ -1,0 +1,15 @@
+{
+  "name": "logo_maker_challenge",
+  "version": "1.0.0",
+  "description": "This app is designed to generate a logo file based on specific shape/color/content criteria",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
