@@ -31,7 +31,7 @@ This project is licensed under the MIT license.
 
 ## Contribution Guidelines
 
-Anyone can contrigbute 
+Anyone can contribute 
 
 ## Contributors 
 
